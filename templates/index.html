@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>大模型标注工具(对话场景)</h1>
+    
+    <div class="upload-section">
+        <input type="file" id="fileInput" accept=".json">
+        <button onclick="uploadFile()">上传</button>
+    </div>
+
+    <div id="conversation-container" class="conversation-container">
+        <!-- 对话内容将在这里动态显示 -->
+    </div>
+
+    <div class="actions">
+        <button onclick="saveConversations()">保存标注</button>
+    </div>
+</div>
+{% endblock %} 

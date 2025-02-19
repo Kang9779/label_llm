@@ -1,0 +1,11 @@
+annotation_system/
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+├── templates/
+│   ├── base.html
+│   └── index.html
+├── app.py
+└── requirements.txt 
