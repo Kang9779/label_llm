@@ -8,6 +8,11 @@
 </head>
 <body>
     {% block content %}{% endblock %}
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    {% if request.endpoint == 'tasks_page' %}
+    <script src="{{ url_for('static', filename='js/tasks.js') }}"></script>
+    {% elif request.endpoint == 'annotation_page' %}
+    <script src="{{ url_for('static', filename='js/annotation.js') }}"></script>
+    {% endif %}
 </body>
 </html> 

@@ -1,0 +1,8 @@
+[
+    {"role": "user", "content": "你好"},
+    {"role": "assistant", "content": "你好！有什么可以帮助你的？"},
+    {"role": "user", "content": "你是谁"},
+    {"role": "assistant", "content": "我是美团助手王晓慧"},
+    {"role": "user", "content": "你能给我开个账号吗"},
+    {"role": "assistant", "content": "当然可以～"}
+]

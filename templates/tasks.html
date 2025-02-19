@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>大模型标注工具(对话场景)</h1>
+    
+    <div class="upload-section">
+        <input type="file" id="fileInput" accept=".json" multiple>
+        <button onclick="uploadFiles()">批量上传</button>
+    </div>
+
+    <div class="task-list">
+        <h2>标注任务列表</h2>
+        <table id="task-table">
+            <thead>
+                <tr>
+                    <th>文件名</th>
+                    <th>上传时间</th>
+                    <th>完成时间</th>
+                    <th>标注状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="task-container">
+                <!-- 任务列表将在这里动态显示 -->
+            </tbody>
+        </table>
+        
+        <div class="pagination">
+            <div class="pagination-info">
+                共 <span id="total-tasks">0</span> 条记录
+            </div>
+            <div class="pagination-controls">
+                <button id="prev-page" onclick="changePage('prev')" disabled>上一页</button>
+                <span id="page-info">第 <span id="current-page">1</span> / <span id="total-pages">1</span> 页</span>
+                <button id="next-page" onclick="changePage('next')" disabled>下一页</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

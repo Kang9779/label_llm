@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1>大模型标注工具(对话场景)</h1>
+        <div class="file-info">
+            <span class="file-label">当前文件：</span>
+            <span id="current-filename" class="file-name"></span>
+        </div>
+    </div>
+
+    <div id="conversation-container" class="conversation-container">
+        <!-- 对话内容将在这里动态显示 -->
+    </div>
+
+    <div class="actions">
+        <button class="btn-success" onclick="saveConversations()">保存标注</button>
+        <button class="btn-primary" onclick="window.location.href='/'">返回任务列表</button>
+    </div>
+</div>
+{% endblock %} 

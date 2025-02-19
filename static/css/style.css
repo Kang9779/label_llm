@@ -21,11 +21,16 @@ h1 {
 
 .upload-section button {
     padding: 6px 12px;
-    background-color: #4CAF50;
+    background-color: #1976d2;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.upload-section button:hover {
+    background-color: #1565c0;
 }
 
 .conversation-container {
@@ -122,19 +127,183 @@ h1 {
 }
 
 .actions {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.actions button {
-    padding: 6px 16px;
+.btn-primary {
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+}
+
+.btn-success {
+    padding: 8px 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
 }
 
-.actions button:hover {
+.btn-success:hover {
     background-color: #45a049;
+}
+
+.task-list {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.task-list h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#task-table th,
+#task-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#task-table th {
+    background-color: #f5f5f5;
+    font-weight: 500;
+    color: #333;
+}
+
+#task-table tr:hover {
+    background-color: #f8f8f8;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status-pending {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+.status-completed {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.task-action {
+    color: #1976d2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.task-action:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+.file-label {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.file-name {
+    color: #1976d2;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px 8px;
+    background-color: #e3f2fd;
+    border-radius: 3px;
+}
+
+.file-info button {
+    padding: 4px 8px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 分页样式 */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pagination-info {
+    color: #666;
+    font-size: 14px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagination-controls button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+}
+
+.pagination-controls button:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.pagination-controls button:not(:disabled):hover {
+    background-color: #f0f0f0;
+}
+
+#page-info {
+    font-size: 14px;
+    color: #666;
 } 
